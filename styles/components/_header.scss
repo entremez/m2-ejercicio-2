@@ -1,0 +1,31 @@
+.head{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo{
+        img{
+            width: 10rem;
+        }
+    }
+    &__menu{
+        a{
+            margin-left: 3rem;
+            font-size: 1.3rem;
+        }
+    }
+
+    &__item {
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    &__button{
+        background-color: #5fa7d6; 
+        margin: 2rem; 
+        padding: 1rem;
+        border-radius: 12px;
+        font-weight: bold;
+    }
+}
