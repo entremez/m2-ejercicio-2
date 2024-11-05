@@ -1,0 +1,28 @@
+.team{
+    &__title{
+        font-size: 2rem;
+    }
+    &__item{
+        border: solid 1px gray;
+        margin: 2rem;
+        padding: 1rem;
+        width: 300px;
+    }
+    &__img{
+        width: 300px;
+    }
+    &__container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__name{
+        font-size: 1.5rem;
+    }
+    &__speciality{
+        font-size: 1.2rem;
+    }
+    &__text{
+        font-size: 1.2rem;
+    }
+}

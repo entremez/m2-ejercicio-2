@@ -19,6 +19,9 @@
     &__item {
         text-decoration: none;
         text-transform: uppercase;
+        &--current{
+            background-color: yellow;
+        }
     }
 
     &__button{
@@ -28,4 +31,6 @@
         border-radius: 12px;
         font-weight: bold;
     }
+
+
 }

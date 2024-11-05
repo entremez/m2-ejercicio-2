@@ -2,15 +2,20 @@
 <html lang="es">
 <head>
     <title>Equipo</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="/home.html"><img src="images/logo.jpg" alt="Logo de la empresa" width="150px"></a>
-            <a href="/home.html">Home</a>
-            <a href="/equipo.html" style="background-color: yellow ;">Equipo</a>
-            <a href="/contacto.html" >Contacto</a>
-            <button style="background-color: aquamarine; margin: 2rem; padding: .7rem;">RESERVAR CITA</button>
+        <nav class="head">
+            <div class="head__logo">
+                <a href="/home.html"><img src="images/logo.jpg" alt="Logo de la empresa"></a>
+            </div>
+            <div class="head__menu">    
+                <a href="/home.html" class="head__item">Home</a>
+                <a href="/equipo.html" class="head__item head__item--current">Equipo</a>
+                <a href="/contacto.html" class="head__item">Contacto</a>
+            </div>
+            <button class="head__button">RESERVAR CITA</button>
         </nav>
     </header>
     <main>
@@ -18,45 +23,30 @@
             <h1>Compromiso con la excelencia</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem animi quaerat explicabo molestias ad asperiores odit ipsam, natus veritatis? Nam, ipsam aperiam autem odit vero harum alias assumenda exercitationem vitae.</p>      
         </article>
-        <section tabindex="2">
-            <h1>Equipo médico</h1>
-            <article class="equipo" style="border: solid 1px gray; margin: 2rem">
-                <img width="300px" src="images/equipo2.jpg" alt="Imágen del mienbro 1 del equipo">
-                <div class="container">
-                    <h4>Nombre médico 1</h4>
-                    <p>Especialidad</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem praesentium accusantium enim dolorum, esse repellat sunt ducimus. Odit ex nemo iure dolores quasi facere, ea culpa, in cumque voluptates corporis.</p>
+        <section tabindex="2" class="team">
+            <h1 class="team__title">Equipo médico</h1>
+            <article class="team__item">
+                <img class="team__img" src="images/equipo2.jpg" alt="Imágen del mienbro 1 del equipo">
+                <div class="team__container">
+                    <h4 class="team__name">Nombre médico 1</h4>
+                    <p class="team__speciality">Especialidad</p>
+                    <p class="team__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem praesentium accusantium enim dolorum, esse repellat sunt ducimus. Odit ex nemo iure dolores quasi facere, ea culpa, in cumque voluptates corporis.</p>
+                </div>
+            </article>
+            
+            <article class="team__item">
+                <img class="team__img" src="images/equipo1.jpg" alt="Imágen del mienbro 1 del equipo">
+                <div class="team__container">
+                    <h4 class="team__name">Nombre médico 1</h4>
+                    <p class="team__speciality">Especialidad</p>
+                    <p class="team__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem praesentium accusantium enim dolorum, esse repellat sunt ducimus. Odit ex nemo iure dolores quasi facere, ea culpa, in cumque voluptates corporis.</p>
                 </div>
             </article> 
-
-            <article class="equipo" style="border: solid 1px gray; margin: 2rem">
-                <img width="300px" src="images/equipo1.jpg" alt="Imágen del mienbro 2 del equipo">
-                <div class="container">
-                <h4>Nombre médico 2</h4>
-                <p>Especialidad</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem praesentium accusantium enim dolorum, esse repellat sunt ducimus. Odit ex nemo iure dolores quasi facere, ea culpa, in cumque voluptates corporis.</p>
-                </div>
-            </article> 
-            <article class="equipo" style="border: solid 1px gray; margin: 2rem">
-                <img width="300px" src="images/equipo2.jpg" alt="Imágen del mienbro 3 del equipo">
-                <div class="container">
-                <h4>Nombre médico 3</h4>
-                <p>Especialidad</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem praesentium accusantium enim dolorum, esse repellat sunt ducimus. Odit ex nemo iure dolores quasi facere, ea culpa, in cumque voluptates corporis.</p>
-                </div>
-            </article> 
-            <article class="equipo" style="border: solid 1px gray; margin: 2rem">
-                <img width="300px" src="images/equipo1.jpg" alt="Imágen del mienbro 4 del equipo">
-                <div class="container">
-                <h4>Nombre médico 4</h4>
-                <p>Especialidad</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem praesentium accusantium enim dolorum, esse repellat sunt ducimus. Odit ex nemo iure dolores quasi facere, ea culpa, in cumque voluptates corporis.</p>
-                </div>
-            </article>  
         </section>
     </main>
-    <footer style="border-top:gray solid 1px; margin-top: 2rem; padding-top: 2rem;">
-        Hospital - 2024
+    <footer class="footer">
+        <h3>Hospital - 2024</h3>
+        <p class="footer__text">mail@hospital.com</p>
     </footer>
 </body>
 </html>

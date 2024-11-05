@@ -334,6 +334,9 @@ main {
   text-decoration: none;
   text-transform: uppercase;
 }
+.head__item--current {
+  background-color: yellow;
+}
 .head__button {
   background-color: #5fa7d6;
   margin: 2rem;
@@ -349,6 +352,51 @@ main {
   font-size: 1.2rem;
 }
 
+.services__title {
+  font-size: 2rem;
+}
+.services__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.services__item {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.testimonios__title {
+  font-size: 2rem;
+}
+.testimonios__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.testimonios__item {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+.testimonios__text {
+  font-size: 1.2rem;
+  height: 200px;
+}
+
 .footer {
   background-color: rgb(209, 236, 247);
   display: flex;
@@ -361,4 +409,31 @@ main {
 .footer__text {
   display: block;
   font-size: 0.8rem;
+}
+
+.team__title {
+  font-size: 2rem;
+}
+.team__item {
+  border: solid 1px gray;
+  margin: 2rem;
+  padding: 1rem;
+  width: 300px;
+}
+.team__img {
+  width: 300px;
+}
+.team__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.team__name {
+  font-size: 1.5rem;
+}
+.team__speciality {
+  font-size: 1.2rem;
+}
+.team__text {
+  font-size: 1.2rem;
 }/*# sourceMappingURL=main.css.map */
