@@ -317,6 +317,11 @@ main {
   margin: 0 auto;
 }
 
+@media (400px <= width <= 800px) {
+  main {
+    color: blue;
+  }
+}
 .head {
   padding: 0.5rem;
   display: flex;
@@ -419,14 +424,18 @@ main {
   margin: 2rem;
   padding: 1rem;
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 500px;
+  overflow: hidden;
 }
 .team__img {
   width: 300px;
 }
 .team__container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .team__name {
   font-size: 1.5rem;
@@ -436,4 +445,25 @@ main {
 }
 .team__text {
   font-size: 1.2rem;
+}
+
+.contacto__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacto__label {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+}
+.contacto textarea {
+  height: 5rem;
+}
+.contacto__button {
+  background-color: aquamarine;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

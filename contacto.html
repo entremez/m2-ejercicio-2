@@ -2,41 +2,43 @@
 <html lang="es">
 <head>
     <title>Contacto</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div>
-                <a href="/home.html"><img src="images/logo.jpg" alt="Logo de la empresa" width="150px"></a>
+        <nav class="head">
+            <div class="head__logo">
+                <a href="/home.html"><img src="images/logo.jpg" alt="Logo de la empresa"></a>
             </div>
-            <div>
-                <a href="/home.html">Home</a>
-                <a href="/equipo.html">Equipo</a>
-                <a href="/contacto.html" style="background-color: yellow ;">Contacto</a>
-                <button style="background-color: aquamarine; margin: 2rem; padding: .7rem;">RESERVAR CITA</button>
+            <div class="head__menu">    
+                <a href="/home.html" class="head__item">Home</a>
+                <a href="/equipo.html" class="head__item ">Equipo</a>
+                <a href="/contacto.html" class="head__item head__item--current">Contacto</a>
             </div>
+            <button class="head__button">RESERVAR CITA</button>
         </nav>
     </header>
     <main>
         <form action="#">
-            <ul>
-                <li>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" />
+            <ul class="contacto">
+                <li class="contacto__item">
+                    <label for="nombre" class="contacto__label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" />
                 </li>
-                <li>
-                <label for="mail">Correo electrónico:</label>
-                <input type="email" id="mail" name="mail" />
+                <li class="contacto__item">
+                    <label for="mail" class="contacto__label">Correo electrónico:</label>
+                    <input type="email" id="mail" name="mail" />
                 </li>
-                <li>
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto" />
+                <li class="contacto__item">
+                    <label for="asunto" class="contacto__label">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" />
                 </li>
-                <li>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
+                <li class="contacto__item">
+                    <label for="mensaje" class="contacto__label">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
                 </li>
             </ul>
+            <button class="contacto__button">Enviar</button>
         </form>
 
         <section>
@@ -44,8 +46,9 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.7437241203!2d-70.62804872359177!3d-33.42992517339776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf4fb4f26ef1%3A0x216a94370a6cd71!2sAdalid%20Especialistas%20en%20Formaci%C3%B3n!5e0!3m2!1ses!2scl!4v1729555676265!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
-    <footer style="border-top:gray solid 1px; margin-top: 2rem; padding-top: 2rem;">
-        Hospital - 2024
+    <footer class="footer">
+        <h3>Hospital - 2024</h3>
+        <p class="footer__text">mail@hospital.com</p>
     </footer>
 </body>
 </html>

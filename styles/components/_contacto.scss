@@ -1,0 +1,26 @@
+.contacto{
+    
+    
+    &__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    &__label{
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    textarea{
+        height: 5rem;
+    }
+
+    &__button{
+        background-color: aquamarine;
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 12px;
+        font-weight: bold;
+    }
+}
