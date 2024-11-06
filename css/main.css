@@ -317,11 +317,6 @@ main {
   margin: 0 auto;
 }
 
-@media (400px <= width <= 800px) {
-  main {
-    color: blue;
-  }
-}
 .head {
   padding: 0.5rem;
   display: flex;
@@ -350,6 +345,35 @@ main {
   font-weight: bold;
 }
 
+@media (width < 768px) {
+  .head {
+    position: relative;
+  }
+  .head__logo {
+    display: none;
+  }
+  .head__menu {
+    position: absolute;
+    top: 80%;
+    left: 20vw;
+  }
+  .head__button {
+    position: relative;
+  }
+}
+@media (768px < width < 1024px) {
+  .head {
+    position: relative;
+  }
+  .head__button {
+    position: absolute;
+    top: 100px;
+    left: 40%;
+  }
+  .head__menu {
+    margin-right: 10rem;
+  }
+}
 .welcome__title {
   font-size: 2rem;
 }
@@ -402,6 +426,14 @@ main {
   height: 200px;
 }
 
+@media (width <= 520px) {
+  .services__list {
+    display: block;
+  }
+  .testimonios__list {
+    display: block;
+  }
+}
 .footer {
   background-color: rgb(209, 236, 247);
   display: flex;

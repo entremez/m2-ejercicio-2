@@ -57,3 +57,18 @@
         height: 200px;
     }
 }
+
+
+    @media (width <= 520px) {
+        .services{
+            &__list{
+                display: block;
+            }
+        }
+
+        .testimonios{
+            &__list{
+                display: block;
+            }
+        }
+    }

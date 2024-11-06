@@ -34,3 +34,38 @@
 
 
 }
+
+@media (width < 768px) {
+    .head{
+        position: relative;
+        &__logo{
+            display: none;
+        }
+        &__menu{
+            position: absolute;
+            top: 80%;
+            left: 20vw;
+        }
+        &__button{
+            position: relative;
+        }
+    }
+
+}
+
+@media (768px < width < 1024px) {
+    .head{
+        position: relative;
+        &__button{
+            position: absolute;
+            top: 100px;
+            left: 40%;
+        }
+        &__menu{
+            margin-right: 10rem;
+        }
+    }
+
+}
+
+//, 768px - 1024px, > 1024px).
